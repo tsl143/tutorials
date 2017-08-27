@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Context menu demo",
+    "description": "Seacrhes the selected text on duck duck go",
+    "version": "1.0",
+    "icons": {
+        "48": "icons/logo_48.png",
+        "96": "icons/logo_96.png"
+    },
+    "permissions":["contextMenus"],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
