@@ -1,24 +1,16 @@
 {
-
-  "description": "Demo to show usage of page action css and popup",
-  "manifest_version": 2,
-  "name": "Page Action Demo",
-  "version": "1.0",
-  "icons": {
-    "48":"icons/off.svg"
-  }
-  "background": {
-    "scripts": ["background.js"]
-  },
-  "page_action": {
-    "default_icon": "icons/off.svg",
-    "browser_style": true
-  },
-  
-  "permissions": [
-    "activeTab",
-    "tabs",
-    "notifications"
-  ]
-
+    "manifest_version":2,
+    "name": "page action demo",
+    "description": "adds a button in address bar and open poup on click",
+    "version": "1.0",
+    "icons": {
+        "64": "icons/logo.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "page_action": {
+        "default_icon": "icon/logo.png",
+        "browser_style": true
+    }
 }
