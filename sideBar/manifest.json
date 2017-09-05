@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Sidebar Demo",
+    "description": "To display a panel that contains my stuff",
+    "version": "1.0",
+    "icons": {
+        "64": "icons/icon.png"
+    },
+    "sidebar_action": {
+        "default_title": "My Panel",
+        "default_icon": "icons/icon.png",
+        "default_panel": "index.html"
+    }
+}
