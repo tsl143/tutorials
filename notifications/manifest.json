@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "notification example",
+    "description": "demonstrate usage of notification API",
+    "version": "1.0",
+    "icons": {
+        "64" : "bell.png" 
+    },
+    "background":{
+        "scripts":["background.js"]
+    },
+    "browser_action":{
+        "default_icon": {
+            "64": "bell.png"
+        },
+        "default_title": "My notification"
+    },
+    "permissions": ["notifications"]
+}
