@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "shortcut",
+    "description": "demo of keyboard shortcuts",
+    "version": "0.0.1",
+    "background": {
+        "scripts": ["bg.js"]
+    },
+    "browser_action": {
+        "default_title": "My action",
+        "default_popup": "action.html"
+    },
+    "permissions": ["notifications"],
+    "commands": {
+        "my-shortcut": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+K",
+                "mac": "Command+Shift+K"
+            },
+            "description": "it throws notification"
+        },
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+U",
+                "mac": "Command+Shift+U"
+            }
+        }
+    }
+}
