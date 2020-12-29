@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  webapp:
+    build:
+      context: webapp/
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./webapp:/usr/app
+    networks:
+      - api-network
+
+  api:
+    build:
+      context: api/
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./api:/usr/app
+    networks:
+      - api-network
+
+networks:
+  api-network:
+    driver: bridge
